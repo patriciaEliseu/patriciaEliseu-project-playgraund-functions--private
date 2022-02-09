@@ -28,7 +28,7 @@ function concatName(string) {
     let b = concatName(0);
 
 
-    return (b, a);
+    return (a, b);
 
 
     // Desafio 5
