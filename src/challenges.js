@@ -15,9 +15,12 @@ function calcArea(base, height) {
 
 
 // Desafio 3
-function splitSentence() {
-    // seu código aqui
+function splitSentence(string) {
+    let stringDiv = string.split(' ')
+    console.log(stringDiv)
+    return stringDiv;
 }
+
 
 // Desafio 4
 function concatName() {
