@@ -7,6 +7,7 @@ function compareTrue(value1, value2) {
     }
 }
 
+
 // Desafio 2
 function calcArea(base, height) {
     let area = (base * height) / 2;
@@ -23,58 +24,55 @@ function splitSentence(string) {
 
 
 // Desafio 4
-function concatName(string) {
-    let a = concatName.length - 1;
-    let b = concatName(0);
+function concatName() {
+    return (concatName.length - 1, 0);
+}
 
 
-    return (a, b);
+// Desafio 5
+function footballPoints() {
+    // seu código aqui
+}
 
+// Desafio 6
+function highestCount() {
+    // seu código aqui
+}
 
-    // Desafio 5
-    function footballPoints() {
-        // seu código aqui
-    }
+// Desafio 7
+function catAndMouse() {
+    // seu código aqui
+}
 
-    // Desafio 6
-    function highestCount() {
-        // seu código aqui
-    }
+// Desafio 8
+function fizzBuzz() {
+    // seu código aqui
+}
 
-    // Desafio 7
-    function catAndMouse() {
-        // seu código aqui
-    }
+// Desafio 9
+function encode() {
+    // seu código aqui
+}
 
-    // Desafio 8
-    function fizzBuzz() {
-        // seu código aqui
-    }
+function decode() {
+    // seu código aqui
+}
 
-    // Desafio 9
-    function encode() {
-        // seu código aqui
-    }
+// Desafio 10
+function techList() {
+    // seu código aqui
+}
 
-    function decode() {
-        // seu código aqui
-    }
-
-    // Desafio 10
-    function techList() {
-        // seu código aqui
-    }
-
-    module.exports = {
-        calcArea,
-        catAndMouse,
-        compareTrue,
-        concatName,
-        decode,
-        encode,
-        fizzBuzz,
-        footballPoints,
-        highestCount,
-        splitSentence,
-        techList,
-    };
+module.exports = {
+    calcArea,
+    catAndMouse,
+    compareTrue,
+    concatName,
+    decode,
+    encode,
+    fizzBuzz,
+    footballPoints,
+    highestCount,
+    splitSentence,
+    techList,
+}
