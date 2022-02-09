@@ -25,13 +25,21 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName() {
+
     return (concatName.length - 1, 0);
 }
 
 
 // Desafio 5
-function footballPoints() {
-    // seu código aqui
+function footballPoints(wins, ties) {
+    let resultado = wins * 3 + ties * 1;
+    if (resultado === 50) {
+        return 50;
+    } else if (resultado === 5) {
+        return 5;
+    } else(resultado === 0); {
+        return 0;
+    }
 }
 
 // Desafio 6
