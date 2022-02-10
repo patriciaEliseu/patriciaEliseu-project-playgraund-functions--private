@@ -24,10 +24,13 @@ function splitSentence(string) {
 
 
 // Desafio 4
-function concatName() {
-
-    return (concatName.length - 1, 0);
+function concatName(array) {
+    let primeiraPalavra = array[0];
+    let ultimaPalavra = array.pop();
+    let juntas = ultimaPalavra + ', ' + primeiraPalavra;
+    return juntas;
 }
+
 
 
 // Desafio 5
@@ -43,19 +46,33 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-    // seu código aqui
+function highestCount(matriz) {
+    console.log(highestCount.sort());
+
 }
 
 // Desafio 7
-function catAndMouse() {
-    // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+
 }
 
 // Desafio 8
 function fizzBuzz() {
-    // seu código aqui
+    for (let index = 0; index < fizzBuzz.length; index += 1) {
+        console.log(fizzBuzz[index]);
+    }
+    if (index % 3 === 0 && index % 5 === 0) {
+        return ("fizzbuzz");
+    } else if (index % 3 === 0) {
+        return ("fizz");
+    } else if (index % 5 === 0) {
+        return ("buzz");
+    } else {
+        return ("bug!");
+    }
 }
+
+
 
 // Desafio 9
 function encode() {
