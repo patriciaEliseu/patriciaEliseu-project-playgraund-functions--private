@@ -18,7 +18,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
     let stringDiv = string.split(' ')
-    console.log(stringDiv)
+    console.log(stringDiv);
     return stringDiv;
 }
 
@@ -46,30 +46,42 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount(matriz) {
-    console.log(highestCount.sort());
+function highestCount(matrizNumeros) {
+    for (let index = 0; index < matrizNumeros.length; index += 1) {
+        console.log(matrizNumeros.sort[index]);
+    }
 
 }
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-
+    let c1 = Math.abs(cat1 - mouse);
+    let c2 = Math.abs(cat2 - mouse);
+    if (c1 > c2) {
+        return ("cat2");
+    } else if (c1 < c2) {
+        return ("cat1");
+    } else {
+        return ("os gatos trombam e o rato foge");
+    }
 }
 
 // Desafio 8
-function fizzBuzz() {
-    for (let index = 0; index < fizzBuzz.length; index += 1) {
-        console.log(fizzBuzz[index]);
+function fizzBuzz(arrey) {
+    let matriz = [];
+    for (let index = 0; index < arrey.length; index += 1) {
+        if (arrey[index] % 3 === 0) {
+            matriz.push("fizz");
+        } else if (arrey[index] % 5 === 0) {
+            matriz.push("buzz");
+        } else if (arrey[index] % 3 === 0 && arrey[index] % 5 === 0) {
+            matriz.push("fizzBuzz");
+        } else {
+            matriz.push("bug!");
+        }
     }
-    if (index % 3 === 0 && index % 5 === 0) {
-        return ("fizzbuzz");
-    } else if (index % 3 === 0) {
-        return ("fizz");
-    } else if (index % 5 === 0) {
-        return ("buzz");
-    } else {
-        return ("bug!");
-    }
+    return matriz;
 }
 
 
