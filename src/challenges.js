@@ -47,10 +47,13 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(matrizNumeros) {
+    let maiorNumero = 0;
     for (let index = 0; index < matrizNumeros.length; index += 1) {
-        console.log(matrizNumeros.sort[index]);
+        if (matrizNumeros[index] > maiorNumero) {
+            maiorNumero => matrizNumeros[index];
+        }
     }
-
+    return (maiorNumero += 1);
 }
 
 
@@ -87,7 +90,7 @@ function fizzBuzz(arrey) {
 
 
 // Desafio 9
-function encode() {
+function encode(pstring) {
     // seu código aqui
 }
 
