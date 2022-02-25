@@ -93,27 +93,48 @@ function fizzBuzz(arrey) {
 
 // Desafio 9
 function encode(pstring) {
-    let resultado1 = 0;
+    let resultado1 = "";
     for (let index = 0; index < pstring.length; index += 1) {
-        if (pstring[index] === a) {
-            resultado1 = 1;
-        } else if (pstring[index] === e) {
-            resultado1 = 2;
-        } else if (pstring[index] === i) {
-            resultado1 = 3;
-        } else if (pstring[index] === o) {
-            resultado1 = 4;
-        } else if (pstring[index] === u) {
-            resultado1 = 5;
+        if (pstring[index] === "a") {
+            resultado1 += "1";
+        } else if (pstring[index] === "e") {
+            resultado1 += "2";
+        } else if (pstring[index] === "i") {
+            resultado1 += "3";
+        } else if (pstring[index] === "o") {
+            resultado1 += "4";
+        } else if (pstring[index] === "u") {
+            resultado1 += "5";
+        } else {
+            resultado1 += pstring[index];
         }
     }
+    return resultado1;
 }
+encode("hi there!")
 
-
-function decode() {
-
+function decode(resultado1) {
+    let resultado2 = "";
+    for (index = 0; index < resultado1.length; index += 1) {
+        if (resultado1[index] === "1") {
+            resultado2 += "a";
+        } else if (resultado1[index] === "2") {
+            resultado2 += "e";
+        } else if (resultado1[index] === "3") {
+            resultado2 += "i";
+        } else if (resultado1[index] === "4") {
+            resultado2 += "o";
+        } else if (resultado1[index] === "5") {
+            resultado2 += "u";
+        } else {
+            resultado2 += resultado1[index];
+        }
+    }
+    return resultado2;
 
 }
+decode("h3 th2r2!");
+
 /* 10 - Crie uma função de Lista de Tecnologias
 Crie uma função que recebe um array de nomes de tecnologias que você quer aprender. Essa função deve também um segundo parâmetro chamado namecom um nome.
 
